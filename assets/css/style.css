@@ -10,6 +10,11 @@ h1 {
     font-family: 'Lily Script One', cursive;
     font-size: 70px }
 
+a, u {
+    text-decoration: none;
+    color: white;
+    font-weight: bold }
+
 footer {
     font-family: 'Lily Script One', cursive;
     background: white;
