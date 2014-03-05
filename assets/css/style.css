@@ -10,10 +10,15 @@ h1 {
     font-family: 'Lily Script One', cursive;
     font-size: 70px }
 
-a, u {
-    text-decoration: none;
+a {
+    text-decoration: none }
+
+a.out{
     color: white;
     font-weight: bold }
+
+a.in{
+    color: #4ADB3D }
 
 footer {
     font-family: 'Gabriela', serif;
