@@ -8,7 +8,7 @@ body {
 
 h1 {
     font-family: 'Lily Script One', cursive;
-    font-size: 70px }
+    font-size: 60px }
 
 a {
     text-decoration: none }
@@ -26,21 +26,29 @@ footer {
     color: #4ADB3D;
     position:absolute;
     bottom:0;
-    width:100%;
+    width: 100%;
     height:80px;
     padding-top:40px }
 
 #logo {
     background:url('../img/front.png') no-repeat center top;
-    height: 400px;
+    height: 350px;
     width: auto;
-    background-size: auto 400px }
+    background-size: auto 350px }
 
 #logo:hover {
     background:url('../img/blur.png') no-repeat center top;
-    height: 400px;
-    background-size: auto 400px }
+    height: 350px;
+    background-size: auto 350px }
 
 #shadowed {
     text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135 }
+
+#description {
+    font-size: 24px;
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -80px;
+    margin-left: 25%;
+    margin-right: 25% }
 
