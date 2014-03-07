@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/fern4lvarez/lozoyavalley",
+	"ImportPath": "github.com/lozoyavalley/www.lozoyavalley.org",
 	"GoVersion": "go1.2",
 	"Deps": [
 		{
