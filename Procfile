@@ -1,1 +1,1 @@
-web: lozoyavalley
+web: www.lozoyavalley.org
