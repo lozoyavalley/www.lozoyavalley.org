@@ -12,7 +12,7 @@ type Site struct {
 
 func NewSite() *Site {
     title := "Lozoya Valley"
-    description := `The Lozoya Valley initiative aims to associate product and media professional
+    description := `The Lozoya Valley initiative aims to associate product and media professionals
 to launch and adapt a technology and creative ecosystem within a rural, natural environment,
 encouraging a healthy and sustainable way of life.`
     return &Site{title, description}
