@@ -1,21 +1,30 @@
 package main
 
 import (
+    "fmt"
+
     "github.com/codegangsta/martini"
     "github.com/martini-contrib/render"
+    "github.com/nicksnyder/go-i18n/i18n"
 )
 
 type Site struct {
+    Lang        string
     Title       string
     Description string
+    LearnMore   string
 }
 
-func NewSite() *Site {
+func NewSite(locale string) *Site {
+    locale_path := fmt.Sprintf("locale/%s.json", locale)
+    i18n.MustLoadTranslationFile(locale_path)
+    T, _ := i18n.Tfunc(locale)
+
+    lang := locale
     title := "Lozoya Valley"
-    description := `The Lozoya Valley initiative aims to associate product and media professionals
-to launch and adapt a technology and creative ecosystem within a rural, natural environment,
-encouraging a healthy and sustainable way of life.`
-    return &Site{title, description}
+    description := T("description")
+    learnMore := T("learn_more")
+    return &Site{lang, title, description, learnMore}
 }
 
 func main() {
@@ -25,9 +34,13 @@ func main() {
         Layout: "layout",
     }))
 
-    site := NewSite()
-
     m.Get("/", func(r render.Render) {
+        site := NewSite("en-US")
+        r.HTML(200, "index", site)
+    })
+
+    m.Get("/es", func(r render.Render) {
+        site := NewSite("es-ES")
         r.HTML(200, "index", site)
     })
 
