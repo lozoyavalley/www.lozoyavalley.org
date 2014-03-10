@@ -44,5 +44,10 @@ func main() {
         r.HTML(200, "index", site)
     })
 
+    m.NotFound(func(r render.Render) {
+        site := NewSite("en-US")
+        r.HTML(404, "404", site)
+    })
+
     m.Run()
 }
