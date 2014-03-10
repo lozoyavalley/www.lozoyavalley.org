@@ -37,7 +37,7 @@ a.in{
 
 #title {
     font-family: 'Lily Script One', cursive;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 #logo {
@@ -60,10 +60,17 @@ a.in{
 }
 
 #description {
-    font-size: 0.9em;
+    font-size: 26px;
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 5%;
+}
+
+@media (max-width: 1200px) {
+  #description { font-size: 0.8em; }
+}
+@media (max-width: 600px) {
+  #description { font-size: 0.6em; }
 }
 
 .site-footer, .page-wrap:after {
