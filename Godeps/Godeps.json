@@ -14,6 +14,10 @@
 		{
 			"ImportPath": "github.com/martini-contrib/render",
 			"Rev": "68eb61a5313c3eff5625a16f6eee8f29b4835ff7"
+		},
+		{
+			"ImportPath": "github.com/nicksnyder/go-i18n/i18n",
+			"Rev": "d417c59f6603ebff8fe4b6f55e1bf9c867a88038"
 		}
 	]
 }
