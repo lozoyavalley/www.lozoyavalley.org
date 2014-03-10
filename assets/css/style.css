@@ -43,8 +43,10 @@ a.in{
 #logo {
     background:url('../img/front.png') no-repeat center top;
     height: 350px;
-    width: auto;
+    width: 350px;
     background-size: auto 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #logo:hover {
