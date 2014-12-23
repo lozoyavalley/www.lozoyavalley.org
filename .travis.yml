@@ -1,1 +1,9 @@
 language: go
+deploy:
+  provider: cloudcontrol
+  email: fa@cloudcontrol.de
+  password:
+    secure: GKGCmKbkVccys6pZhW4fn2seRxqI8BMygDnP/Sz+RCi0yvUT+zkM9GeHjK0rADf+DfJXnD5Ua1+vIP5Jz2lGqt7OFul0Gfq0hkkNhyjyjvI9wsXqjaCTnpkdHD0AK2/c7fcNu2dtpJCUldebhiIDJYbjrT2ZOzLvDmLeQbpPcOM=
+  deployment: lozoyavalley/default
+  on:
+    repo: lozoyavalley/www.lozoyavalley.org
